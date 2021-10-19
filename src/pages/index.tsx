@@ -7,7 +7,6 @@ export default function Home() {
     <div className="flex flex-col min-h-screen py-2">
       <Head>
         <title>Givables</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <nav>
