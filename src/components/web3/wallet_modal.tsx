@@ -47,8 +47,8 @@ export default function WalletModal({handleClose, show}: {handleClose: MouseEven
         <>
         {show && 
             <div className="absolute z-50 top-0 left-0 h-screen w-screen flex justify-center items-center bg-black bg-opacity-10">
-                <div ref={wrapper} className="w-64 h-32 flex flex-col items-center justify-center p-4 space-y-2 bg-white rounded-lg">
-                    <div onClick={() => connectWallet(injected)} className="w-full h-1/2 flex items-center px-4 py-2 space-x-4 border border-black rounded-md cursor-pointer">
+                <div ref={wrapper} className="w-64 flex flex-col items-center justify-center p-4 sm:space-y-2 bg-white rounded-lg">
+                    <div onClick={() => connectWallet(injected)} className="hidden sm:flex items-center w-full h-1/2  px-4 py-2 space-x-4 border border-black rounded-md cursor-pointer">
                         <FiChevronsRight/>
                         <span> Metamask </span>
                     </div>
