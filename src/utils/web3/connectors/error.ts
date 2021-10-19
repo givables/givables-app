@@ -1,5 +1,9 @@
 import { UnsupportedChainIdError } from "@web3-react/core";
-import { NoEthereumProviderError } from "@web3-react/injected-connector";
+import {
+  NoEthereumProviderError,
+  UserRejectedRequestError as UserRejectedRequestErrorInjected,
+} from "@web3-react/injected-connector";
+import { UserRejectedRequestError as UserRejectedRequestErrorWalletConnect } from "@web3-react/walletconnect-connector";
 
 export function getErrorMessage(error: Error | undefined) {
   if (error instanceof NoEthereumProviderError) {
