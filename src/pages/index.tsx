@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import logo from '../../public/assets/logo/logo.png'
-import WaitlistButton from '../components/tools/waitlist'
+import WaitlistButton from '../components/tools/waitlistButton'
 
 export default function Home() {
 
