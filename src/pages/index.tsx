@@ -16,11 +16,11 @@ export default function Home() {
       <main className="z-10 flex flex-col flex-grow items-center justify-center w-full space-y-8">
         <div className="flex flex-col items-center justify-center">
           { logo &&
-            <div className="w-64">
+            <div className="w-56 sm:w-64">
               <Image src={logo}/>
             </div>
           }
-          <span className="-mt-4 text-lg"> the undergraduate artist's DAO</span>
+          <span className="-mt-4 sm:text-lg"> the undergraduate artist's DAO</span>
         </div>
         <div className="flex items-center justify-center w-60 h-16 rounded-full border border-black bg-white cursor-pointer">
           <span> coming soon... </span>
