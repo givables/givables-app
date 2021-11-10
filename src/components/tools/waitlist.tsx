@@ -8,7 +8,7 @@ export default function WaitlistButton() {
     const wrapper = useRef<any>();
     const input = useRef<any>();
 
-    const {isOpen, setIsOpen} = useModal(wrapper, true);
+    const {isOpen, setIsOpen} = useModal(wrapper, false);
     const [loading, setLoading] = useState(false);
     const [invalidEmail, setInvalidEmail] = useState(false);
     const [error, setError] = useState(false);
