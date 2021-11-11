@@ -1,18 +1,20 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { FaDiscord } from 'react-icons/fa'
 import logo from '../../public/assets/logo/logo.png'
 import WaitlistButton from '../components/tools/waitlistButton'
-import { FaDiscord } from 'react-icons/fa'
 
 export default function Home() {
 
   return (
-    <div className="relative flex flex-col w-screen min-h-screen" style={{
-      backgroundImage:  `url(${"/assets/background_img.png"})`,
-    }}>
+    <div className="relative flex flex-col w-screen min-h-screen">
       <Head>
         <title>Givables</title>
       </Head>
+
+      <div className="sm:hidden absolute top-0 left-0 z-0 w-full h-full" style={{
+        backgroundImage:  `url(${"/assets/background_img.png"})`,
+      }}></div>
 
       <video autoPlay muted loop className="hidden sm:block absolute z-0 top-0 left-0 w-screen h-full" style={{objectFit: 'cover'}}>
         <source src='./assets/background.mp4' type="video/mp4"/>
