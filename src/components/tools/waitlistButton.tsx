@@ -56,11 +56,12 @@ export default function WaitlistButton() {
     return (
         <>
             <div className="flex flex-col items-center mt-16 space-y-2">
-                <div onClick={() => setIsOpen(true)} className="flex items-center justify-center w-60 h-14 rounded-full border border-black bg-white cursor-pointer">
+                <div onClick={() => setIsOpen(true)} className="flex items-center justify-center w-60 h-14 rounded-full border border-black bg-white bg-opacity-40 cursor-pointer">
                     <span> join the waitlist</span>
                 </div>
                 <span className="text-center text-sm"> get notified when we release our first drop...</span>
             </div>
+
             {isOpen &&  
                 <div className="absolute z-50 top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-10">
                     <div ref={wrapper} className="flex flex-col w-4/5 sm:w-1/3 p-4 space-y-4 rounded-md bg-white">
