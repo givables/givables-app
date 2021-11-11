@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import logo from '../../public/assets/logo/logo.png'
-import background from '../../public/assets/background.png'
 import WaitlistButton from '../components/tools/waitlistButton'
+import { FaDiscord } from 'react-icons/fa'
 
 export default function Home() {
 
@@ -27,6 +27,19 @@ export default function Home() {
           <span className="-mt-4 sm:text-lg"> the undergraduate artist's DAO</span>
         </div>
         <WaitlistButton/>
+
+        <div className="mt-1 outline-none hover:underline hover:cursor-pointer">
+          <a href="https://enter.givables.xyz" target="_blank"><span> enter.givables.xyz </span></a>
+        </div>
+
+        <div className="absolute bottom-0 left-0 flex items-center justify-center w-full h-12">
+         <a href="https://discord.gg/357Sh5dsnX" target="_blank" rel="noopener noreferrer">
+           <div className="flex items-center justify-center px-2 py-1 space-x-2 text-lg rounded-lg hover:shadow-xl hover:bg-gray-100 hover:bg-opacity-50 cursor-pointer">
+            <FaDiscord /> 
+            <span className="-mt-1"> discord </span>
+          </div>
+         </a>
+        </div>  
       </main>
     </div>
   )
