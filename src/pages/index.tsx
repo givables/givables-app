@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { FaDiscord } from 'react-icons/fa'
 import logo from '../../public/assets/logo/logo.png'
+import Intro from '../components/base/intro'
 import WaitlistButton from '../components/tools/waitlistButton'
 
 export default function Home() {
@@ -11,6 +12,10 @@ export default function Home() {
       <Head>
         <title>Givables</title>
       </Head>
+
+      <div className="hidden sm:block">
+        <Intro/>
+      </div>
 
       <div className="sm:hidden absolute top-0 left-0 z-0 w-full h-full" style={{
         backgroundImage:  `url(${"/assets/background_img.png"})`,

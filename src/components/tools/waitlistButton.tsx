@@ -22,6 +22,11 @@ export default function WaitlistButton() {
     const enterEmail = async () => {
         const email = input.current.value;
         if (validateEmail(email)) { 
+            setTimeout(() => {
+                setLoading(false);
+                setInvalidEmail(false);
+                setSuccess(true);
+            }, 6000);
             setLoading(true);
             await axios.post("https://axantillon.npkn.net/add-waitlist", {
                 email: email
@@ -33,7 +38,7 @@ export default function WaitlistButton() {
             }).catch(err => {
                 console.log(err);
                 setError(true);
-            })
+            });
         } else {
             setInvalidEmail(true);
         }
