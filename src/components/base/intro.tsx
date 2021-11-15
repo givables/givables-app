@@ -9,12 +9,12 @@ export default function Intro() {
         to: { opacity: 0 },
         from: { opacity: 1 },
         delay: 4000,
-        config: { duration: 4500 },
+        config: { duration: 3500 },
         onRest: () => setShow(false)
     })
 
     return (
-        <animated.video style={{...props, ...{objectFit: 'cover'}}} autoPlay muted className="z-50 absolute w-screen h-screen">
+        <animated.video style={{...props, ...{objectFit: 'cover'}}} autoPlay muted className={`${show ? 'block' : 'hidden'} z-50 absolute w-screen h-screen`}>
                 <source src='./assets/intro.mp4' type="video/mp4"/>
         </animated.video>
     )
