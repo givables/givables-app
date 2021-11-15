@@ -8,7 +8,7 @@ export default function Intro() {
     const props = useSpring({
         to: { opacity: 0 },
         from: { opacity: 1 },
-        delay: 4000,
+        delay: 5000,
         config: { duration: 3500 },
         onRest: () => setShow(false)
     })
