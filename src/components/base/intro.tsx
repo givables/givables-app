@@ -14,7 +14,7 @@ export default function Intro() {
     })
 
     return (
-        <animated.video style={{...props, ...{objectFit: 'fill'}}} autoPlay muted className="z-50 absolute w-screen h-screen">
+        <animated.video style={{...props, ...{objectFit: 'cover'}}} autoPlay muted className="z-50 absolute w-screen h-screen">
                 <source src='./assets/intro.mp4' type="video/mp4"/>
         </animated.video>
     )
