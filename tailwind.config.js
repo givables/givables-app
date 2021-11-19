@@ -5,7 +5,7 @@ module.exports = {
   theme: {
 		extend: {
 			fontFamily: {
-				'space': ['Space\\ Mono, Azeret\\ Mono, ui-monospace'],
+				'space': ['TeXGyreHerosCondensed', 'Helvetica'],
 			}
 		}
 	},

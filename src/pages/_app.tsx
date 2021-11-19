@@ -1,6 +1,6 @@
 import { Web3ReactProvider } from '@web3-react/core';
 import { providers } from 'ethers';
-import 'tailwindcss/tailwind.css';
+import '../styles/global.css'
 
 function getLibrary(provider: any, connector: any) {
   return new providers.Web3Provider(provider);

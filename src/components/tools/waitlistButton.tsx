@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useRef, useState } from "react";
 import { FiCornerDownLeft, FiX } from "react-icons/fi";
 import useModal from "../../utils/hooks/useModal"
-
+import Text from "../base/text";
 
 export default function WaitlistButton() {
     const wrapper = useRef<any>();
@@ -60,11 +60,8 @@ export default function WaitlistButton() {
 
     return (
         <>
-            <div className="flex flex-col items-center mt-16 space-y-2">
-                <div onClick={() => setIsOpen(true)} className="flex items-center justify-center w-60 h-14 rounded-full border border-black bg-white bg-opacity-40 cursor-pointer">
-                    <span> join the waitlist</span>
-                </div>
-                <span className="text-center text-sm"> get notified when we release our first drop...</span>
+            <div onClick={() => setIsOpen(true)} className="cursor-pointer hover:underline">
+                <Text className="text-md font-medium"> GET NOTIFIED</Text>
             </div>
 
             {isOpen &&  
@@ -78,33 +75,31 @@ export default function WaitlistButton() {
                         { !loading ?
                             <>
                                 { success ? 
-                                    <span> yeah! thanks for joining our waitlist! </span>
+                                    <Text className=""> YEAH! THANKS FOR JOINING OUR WAITING LIST! </Text>
                                 :
                                     <>
                                         <div>
-                                            <span> enter your email address </span>
+                                            <Text className=""> ENTER YOUR EMAIL ADDRESS </Text>
                                         </div>
-                                        <div className="">
+                                        <div>
                                             <div className={`flex items-center w-full p-2 border ${invalidEmail ? 'border-red-500' : 'border-black'} rounded-sm`}>
                                                 <input onKeyPress={handleKeyPress} ref={input} className="flex-grow outline-none bg-white text-sm" type="text" />
                                                 <div onClick={() => handleEnter()} className={`${invalidEmail && 'text-red-500'} cursor-pointer`}>
                                                     <FiCornerDownLeft/>
                                                 </div>
                                             </div>
-                                            {invalidEmail && <span className="text-red-500 text-xs"> sorry, that's not an email </span>}
+                                            {invalidEmail && <Text className="text-red-500 text-xs"> SORRY, NOT AN EMAIL </Text>}
                                         </div>
                                     </>
                                 }
 
                                 { error &&
-                                    <div className="text-red-500">
-                                        <span> so sorry, an error occured... </span>
-                                    </div>
+                                    <Text className="text-red-500"> SO SORRY, AN ERROR OCURRED... </Text>
                                 } 
                             </>
                         :
                             <div className="">
-                                <span> loading... </span>
+                                <Text className=""> LOADING... </Text>
                             </div>
                         }
                     </div>

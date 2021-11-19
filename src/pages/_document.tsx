@@ -13,7 +13,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap"
+            href="/fonts/texgyreheros-regular.otf"
             rel="stylesheet"
           />
           <link rel="icon" href="/favicon.ico" />
