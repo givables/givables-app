@@ -6,7 +6,12 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				'space': ['TeXGyreHerosCondensed', 'Helvetica'],
-			}
+			},
+      fontSize: {
+        '2xs': ['0.5rem', {
+          lineHeight: '1rem',
+        }],
+      }
 		}
 	},
   variants: {

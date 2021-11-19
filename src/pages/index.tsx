@@ -19,16 +19,16 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center">
 
           { logo &&
-            <div className="">
+            <div className="w-3/4 sm:w-auto">
               <Image src={logo}/>
             </div>
           }
 
-          <div className="text-center">
-            <Text className="text-3xl font-medium">
+          <div className="text-center mt-2">
+            <Text className="text-lg sm:text-3xl font-medium">
               THE ART CURATION DAO
             </Text>
-            <Text className="text-sm font-thin"> 
+            <Text className="text-2xs sm:text-sm font-thin"> 
               PROMOTING TALENT IN UNDERGRADUATE ARTISTS
             </Text>
           </div>
@@ -36,12 +36,12 @@ export default function Home() {
           <div className="mt-16 flex justify-around w-full">
             <WaitlistButton/>
             <a href="https://enter.givables.xyz" target="_blank" rel="noopener noreferrer">
-              <Text className="hover:underline cursor-pointer"> ENTER.GIVABLES.XYZ </Text>
+              <Text className="text-sm sm:text-base hover:underline cursor-pointer"> ENTER.GIVABLES.XYZ </Text>
             </a>
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 flex items-center justify-center w-full h-12 space-x-12">
+        <div className="absolute bottom-10 sm:bottom-0 left-0 flex items-center justify-center w-full h-12 space-x-2 sm:space-x-12">
           <Social logo={<FaTwitter/>} text="TWITTER" link="https://twitter.com/givables"/>
           <Social logo={<FaInstagram/>} text="INSTAGRAM" link="https://www.instagram.com/givables/"/>
           <Social logo={<FaDiscord/>} text="DISCORD" link="https://discord.gg/357Sh5dsnX"/>
