@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
-import logo from '../../public/assets/logo/logo.png'
-import Text from '../components/base/text'
-import { FaDiscord, FaInstagram, FaTwitch, FaTwitter } from 'react-icons/fa'
-import WaitlistButton from '../components/tools/waitlistButton'
+import logo_black from '../../public/assets/logo/logo_black.png'
 import Social from '../components/base/social'
+import Text from '../components/base/text'
+import WaitlistButton from '../components/tools/waitlistButton'
 
 export default function Home() {
 
@@ -18,33 +17,30 @@ export default function Home() {
       <main className="z-10 relative flex flex-col flex-grow items-center justify-center w-full">
         <div className="flex flex-col items-center justify-center">
 
-          { logo &&
-            <div className="w-3/4 sm:w-auto">
-              <Image src={logo}/>
+          { logo_black &&
+            <div className="w-64 sm:w-1/2">
+              <Image src={logo_black}/>
             </div>
           }
 
-          <div className="text-center mt-2">
-            <Text className="text-lg sm:text-3xl font-medium">
-              THE ART CURATION DAO
+          <div className="text-center mt-10 -space-y-2">
+            <Text className="text-xs">
+              THE CURATION DAO
             </Text>
-            <Text className="text-2xs sm:text-sm font-thin"> 
-              PROMOTING TALENT IN UNDERGRADUATE ARTISTS
+            <Text className="text-xs"> 
+              PROMOTING TALENT IN THE DIGITAL MARKET
             </Text>
           </div>
 
-          <div className="mt-16 flex justify-around w-full">
+          <div className="mt-8 flex justify-center">
             <WaitlistButton/>
-            <a href="https://enter.givables.xyz" target="_blank" rel="noopener noreferrer">
-              <Text className="text-sm sm:text-base hover:underline cursor-pointer"> ENTER.GIVABLES.XYZ </Text>
-            </a>
           </div>
         </div>
 
-        <div className="absolute bottom-10 sm:bottom-0 left-0 flex items-center justify-center w-full h-12 space-x-2 sm:space-x-12">
-          <Social logo={<FaTwitter/>} text="TWITTER" link="https://twitter.com/givables"/>
-          <Social logo={<FaInstagram/>} text="INSTAGRAM" link="https://www.instagram.com/givables/"/>
-          <Social logo={<FaDiscord/>} text="DISCORD" link="https://discord.gg/357Sh5dsnX"/>
+        <div className="absolute bottom-10 sm:bottom-0 left-0 flex items-center justify-center w-full h-12 space-x-2 sm:space-x-16">
+          <Social logo={<></>} text="TWITTER" link="https://twitter.com/givables"/>
+          <Social logo={<></>} text="INSTAGRAM" link="https://www.instagram.com/givables/"/>
+          <Social logo={<></>} text="DISCORD" link="https://discord.gg/357Sh5dsnX"/>
         </div>  
       </main>
     </div>

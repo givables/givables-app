@@ -61,7 +61,7 @@ export default function WaitlistButton() {
     return (
         <>
             <div onClick={() => setIsOpen(true)} className="cursor-pointer hover:underline">
-                <Text className="text-sm sm:text-base font-medium"> GET NOTIFIED</Text>
+                <Text className="text-xs underline underline-thickness-thin"> GET NOTIFIED</Text>
             </div>
 
             {isOpen &&  
