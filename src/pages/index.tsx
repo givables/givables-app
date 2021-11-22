@@ -5,6 +5,7 @@ import logo_black from '../../public/assets/logo/logo_black.png'
 import Social from '../components/base/social'
 import Text from '../components/base/text'
 import WaitlistButton from '../components/tools/waitlistButton'
+import { FiArrowDown } from 'react-icons/fi'
 
 export default function Home() {
 
@@ -38,9 +39,9 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-10 sm:bottom-0 left-0 flex items-center justify-center w-full h-12 space-x-2 sm:space-x-16">
-          <Social logo={<></>} text="TWITTER" link="https://twitter.com/givables"/>
-          <Social logo={<></>} text="INSTAGRAM" link="https://www.instagram.com/givables/"/>
-          <Social logo={<></>} text="DISCORD" link="https://discord.gg/357Sh5dsnX"/>
+          <Social text="TWITTER" link="https://twitter.com/givables"/>
+          <Social text="INSTAGRAM" link="https://www.instagram.com/givables/"/>
+          <Social text="DISCORD" link="https://discord.gg/357Sh5dsnX"/>
         </div>  
       </main>
     </div>
