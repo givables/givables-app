@@ -59,7 +59,7 @@ export default function handler(req, res) {
       {
         id: "0",
         name: "Stretching at Dusk",
-        image: "/assets/art/3.jpg",
+        image: "/assets/art/3.gif",
         description: {
           text: "Stretching at Dusk is a still image from the animation Stretching at Dusk",
           date: "Circa January 2021",
@@ -110,7 +110,7 @@ export default function handler(req, res) {
       {
         id: "0",
         name: "Stretching at Dusk",
-        image: "/assets/art/6.png",
+        image: "/assets/art/6.gif",
         description: {
           text: "Stretching at Dusk is a still image from the animation Stretching at Dusk",
           date: "Circa January 2021",
@@ -212,7 +212,7 @@ export default function handler(req, res) {
       {
         id: "0",
         name: "Stretching at Dusk",
-        image: "/assets/art/12.png",
+        image: "/assets/art/12.jpg",
         description: {
           text: "Stretching at Dusk is a still image from the animation Stretching at Dusk",
           date: "Circa January 2021",
