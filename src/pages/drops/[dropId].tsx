@@ -36,7 +36,7 @@ export default function Drops() {
       <main className="flex w-full">
         {!isLoading && !isError &&
           <>
-            <div className="relative w-1/4 min-h-screen p-8">
+            <div className="relative w-1/3 min-h-screen p-8">
 
               { logo_black &&
                 <div className="w-full">
